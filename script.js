@@ -29,10 +29,13 @@ function parseCSV(text) {
 function markerColor(severity) {
   const value = (severity || "").toLowerCase();
 
-  if (value.includes("high") || value.includes("critical")) return "#8b2e2e";
-  if (value.includes("elevated")) return "#b7ff00";
+  if (value.includes("critical")) return "#8B2E2E";
 
-  return "#c8beab";
+  if (value.includes("high")) return "#D18A2E";
+
+  if (value.includes("elevated")) return "#B7FF00";
+
+  return "#C8BEAB";
 }
 
 function addSightings(rows) {
