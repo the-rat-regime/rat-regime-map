@@ -50,7 +50,11 @@ function addSightings(rows) {
       if (Number.isNaN(lat) || Number.isNaN(lng)) return;
 
       const point = L.circleMarker([lat, lng], {
-        radius: 8,
+        radius:
+  row.severity?.toLowerCase().includes("critical") ? 12 :
+  row.severity?.toLowerCase().includes("high") ? 10 :
+  row.severity?.toLowerCase().includes("elevated") ? 8 :
+  6,
         color: markerColor(row.severity),
         fillColor: markerColor(row.severity),
         fillOpacity: 0.75,
