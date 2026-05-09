@@ -1,4 +1,4 @@
-const CSV_URL = "PASTE_YOUR_CSV_LINK_HERE";
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRl1CGEZj2kZBkrZOiVi0uo3fyLt0z2vJH1awe3EjzSt81vIR4pnIknbxfyjbltzpxZUw5S0GzGzxVf/pub?output=csv";
 
 const map = L.map("map", {
   zoomControl: true,
