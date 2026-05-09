@@ -1,1 +1,89 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #ededed;
+  font-family: "IBM Plex Mono", monospace;
+}
 
+.tracker-shell {
+  width: 100%;
+  background: #0a0a0a;
+}
+
+.tracker-header {
+  padding: 22px 18px 14px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.meta {
+  margin: 0 0 8px;
+  color: #6a6a6a;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0;
+  font-family: Impact, "Arial Narrow", sans-serif;
+  font-size: clamp(28px, 5vw, 56px);
+  letter-spacing: 0.04em;
+  color: #ededed;
+}
+
+.sub {
+  margin: 8px 0 0;
+  color: #c8beab;
+  font-size: 14px;
+}
+
+#map {
+  height: 620px;
+  width: 100%;
+  background: #0a0a0a;
+}
+
+.tracker-footer {
+  padding: 12px 18px;
+  color: #6a6a6a;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  border-top: 1px solid #1a1a1a;
+}
+
+.leaflet-container {
+  background: #0a0a0a;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #0c0c0c;
+  color: #ededed;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+}
+
+.leaflet-popup-content {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.popup-ref {
+  color: #b7ff00;
+  font-weight: bold;
+}
+
+.popup-status {
+  color: #c8beab;
+}
+
+@media (max-width: 700px) {
+  #map {
+    height: 520px;
+  }
+
+  .tracker-header {
+    padding: 18px 14px 12px;
+  }
+}
